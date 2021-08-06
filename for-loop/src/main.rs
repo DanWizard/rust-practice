@@ -1,5 +1,8 @@
 fn main() {
-    for i in 1..=11 {
-        println!("number is {}", i)
+    let range = 1..=100;
+
+    let vector = vec!["string", "that", "other"];
+    for (index, v) in vector.iter().enumerate() {
+        println!("number is {}, animal is {}", index, v)
     }
 }
